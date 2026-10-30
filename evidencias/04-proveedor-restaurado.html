@@ -1,0 +1,34 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><title>Proveedor: compatibilidad restaurada</title>
+<style>*{box-sizing:border-box}body{margin:0;padding:30px;background:#f1f5f9;color:#14263d;font:18px Arial}h1{font-size:27px;margin:0 0 12px}p{margin:9px 0;line-height:1.4}code{font:15px Consolas,monospace;overflow-wrap:anywhere}.badge{display:inline-block;background:#d8f3e6;padding:8px 12px;border-radius:6px;font-weight:bold}.note{font-size:15px;color:#45566b}pre{background:white;border:1px solid #c9d3df;border-left:5px solid #327f91;padding:20px;font:18px/1.4 Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere;margin-bottom:8px}details pre{font-size:13px}footer{font-size:13px;line-height:1.5;overflow-wrap:anywhere}</style>
+<h1>Proveedor: compatibilidad restaurada</h1>
+<p class="note">Captura del visor de registros originales de una ejecución real. No es una terminal nativa.</p>
+<p>29/10/2026, 19:38:36 · America/Guatemala · v22.23.2</p>
+<p class="badge">Código de salida real: 0 · esperado: 0</p>
+<p><code>node --import tsx tests/verify-provider.ts</code></p>
+<pre id="stdout">Proveedor real: http://127.0.0.1:57144; price=number (COMPATIBLE)
+
+Verifying a pact between ProductConsumer and ProductProvider
+
+  consultar el producto p-100 (0s loading, 42ms verification)
+     Given existe el producto p-100
+    returns a response which
+      has status code 200 (OK)
+      includes headers
+        &quot;Content-Type&quot; with value &quot;application/json; charset=utf-8&quot; (OK)
+      has a matching body (OK)
+
+  consultar el producto p-404 (0s loading, 8ms verification)
+     Given no existe el producto p-404
+    returns a response which
+      has status code 404 (OK)
+      includes headers
+        &quot;Content-Type&quot; with value &quot;application/json; charset=utf-8&quot; (OK)
+      has a matching body (OK)
+
+
+VERIFICACION EXITOSA: las dos interacciones cumplen el contrato.
+</pre>
+<footer>Fuente íntegra: 04-proveedor-restaurado.stdout.log · Solo se eliminan códigos ANSI de color al visualizar.<br>SHA-256 del contrato: fd660d969315959dd27d720427e6cfc3cf21f924edbb480720c92d7300a8fd4c<br>SHA-256 del registro combinado: dc657e3ae2088535f938a3540b467797a918fbce2ad9527f80db0cc67d57a357</footer>
+<details><summary>stderr original (expandir para revisar)</summary><pre>(node:4632) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+</pre></details></html>

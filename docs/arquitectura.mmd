@@ -1,0 +1,15 @@
+flowchart TB
+  subgraph C[Pruebas del consumidor]
+    T[Assertions de resultados] --> CLIENT[ProductClient + HttpClient reales]
+    CLIENT -->|GET /products/p-100 y p-404| MOCK[Servidor simulado Pact]
+    MOCK -->|HTTP 200 o 404| CLIENT
+    MOCK -->|Generación automática| JSON[Contrato JSON Pact V3]
+  end
+  subgraph P[Verificación del proveedor]
+    JSON --> V[Verifier de Pact]
+    V -->|Preparar estado independiente| R[Repositorio en memoria]
+    V -->|Reproducir solicitud HTTP| API[API real de productos]
+    API --> R
+    API -->|Respuesta real| V
+    V --> RESULT[Comparar con contrato: PASS o mismatch]
+  end

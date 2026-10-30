@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="480" height="285" preserveAspectRatio="xMinYMin meet" viewBox="0 0 480 285" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="480" height="285"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-285)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="220" width="145" height="57" rx="7" ry="7" style="stroke: rgb(19%,49%,56%); stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,95%,96%); fill-rule: evenodd;"/>
+			<text x="47.214999999999996" y="256" style="font-family: Helvetica; font-size: 10px;fill: rgb(7%,17%,28%); stroke:none;" transform="translate(0,512) scale(1,-1)">Cliente real</text>
+			<text x="23.735" y="241" style="font-family: Helvetica; font-size: 10px;fill: rgb(7%,17%,28%); stroke:none;" transform="translate(0,482) scale(1,-1)">ProductClient + HTTP</text>
+			<rect x="167" y="220" width="145" height="57" rx="7" ry="7" style="stroke: rgb(19%,49%,56%); stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,95%,96%); fill-rule: evenodd;"/>
+			<text x="199.49" y="256" style="font-family: Helvetica; font-size: 10px;fill: rgb(7%,17%,28%); stroke:none;" transform="translate(0,512) scale(1,-1)">Servidor simulado</text>
+			<text x="201.01" y="241" style="font-family: Helvetica; font-size: 10px;fill: rgb(7%,17%,28%); stroke:none;" transform="translate(0,482) scale(1,-1)">Pact + assertions</text>
+			<rect x="334" y="220" width="145" height="57" rx="7" ry="7" style="stroke: rgb(19%,49%,56%); stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,95%,96%); fill-rule: evenodd;"/>
+			<text x="372.6" y="256" style="font-family: Helvetica; font-size: 10px;fill: rgb(7%,17%,28%); stroke:none;" transform="translate(0,512) scale(1,-1)">Contrato JSON</text>
+			<text x="364.255" y="241" style="font-family: Helvetica; font-size: 10px;fill: rgb(7%,17%,28%); stroke:none;" transform="translate(0,482) scale(1,-1)">Generado por Pact</text>
+			<path d="M 145,248 L 167,248 Z" style="stroke: rgb(19%,49%,56%); stroke-linecap: butt; stroke-width: 1.5;"/>
+			<polygon points="167 248, 161 251, 161 245" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(19%,49%,56%); fill-rule: evenodd;"/>
+			<path d="M 312,248 L 334,248 Z" style="stroke: rgb(19%,49%,56%); stroke-linecap: butt; stroke-width: 1.5;"/>
+			<polygon points="334 248, 328 251, 328 245" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(19%,49%,56%); fill-rule: evenodd;"/>
+			<rect x="334" y="110" width="145" height="57" rx="7" ry="7" style="stroke: rgb(19%,49%,56%); stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,95%,96%); fill-rule: evenodd;"/>
+			<text x="372.32" y="146" style="font-family: Helvetica; font-size: 10px;fill: rgb(7%,17%,28%); stroke:none;" transform="translate(0,292) scale(1,-1)">Verifier de Pact</text>
+			<text x="357.315" y="131" style="font-family: Helvetica; font-size: 10px;fill: rgb(7%,17%,28%); stroke:none;" transform="translate(0,262) scale(1,-1)">Reproduce solicitudes</text>
+			<path d="M 406,220 L 406,167 Z" style="stroke: rgb(19%,49%,56%); stroke-linecap: butt; stroke-width: 1.5;"/>
+			<polygon points="406 167, 403 173, 409 173" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(19%,49%,56%); fill-rule: evenodd;"/>
+			<rect x="167" y="110" width="145" height="57" rx="7" ry="7" style="stroke: rgb(19%,49%,56%); stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,95%,96%); fill-rule: evenodd;"/>
+			<text x="221.715" y="146" style="font-family: Helvetica; font-size: 10px;fill: rgb(7%,17%,28%); stroke:none;" transform="translate(0,292) scale(1,-1)">API real</text>
+			<text x="200.595" y="131" style="font-family: Helvetica; font-size: 10px;fill: rgb(7%,17%,28%); stroke:none;" transform="translate(0,262) scale(1,-1)">GET /products/:id</text>
+			<path d="M 334,138 L 312,138 Z" style="stroke: rgb(19%,49%,56%); stroke-linecap: butt; stroke-width: 1.5;"/>
+			<polygon points="312 138, 318 141, 318 135" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(19%,49%,56%); fill-rule: evenodd;"/>
+			<rect x="167" y="5" width="145" height="57" rx="7" ry="7" style="stroke: rgb(19%,49%,56%); stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,95%,96%); fill-rule: evenodd;"/>
+			<text x="186.43" y="41" style="font-family: Helvetica; font-size: 10px;fill: rgb(7%,17%,28%); stroke:none;" transform="translate(0,82) scale(1,-1)">Repositorio en memoria</text>
+			<text x="186.135" y="26" style="font-family: Helvetica; font-size: 10px;fill: rgb(7%,17%,28%); stroke:none;" transform="translate(0,52) scale(1,-1)">Estados independientes</text>
+			<path d="M 239,110 L 239,62 Z" style="stroke: rgb(19%,49%,56%); stroke-linecap: butt; stroke-width: 1.5;"/>
+			<polygon points="239 62, 236 68, 242 68" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(19%,49%,56%); fill-rule: evenodd;"/>
+			<rect x="0" y="110" width="145" height="57" rx="7" ry="7" style="stroke: rgb(19%,49%,56%); stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,95%,96%); fill-rule: evenodd;"/>
+			<text x="24.705" y="146" style="font-family: Helvetica; font-size: 10px;fill: rgb(7%,17%,28%); stroke:none;" transform="translate(0,292) scale(1,-1)">Resultado del Verifier</text>
+			<text x="21.655" y="131" style="font-family: Helvetica; font-size: 10px;fill: rgb(7%,17%,28%); stroke:none;" transform="translate(0,262) scale(1,-1)">Compatible / mismatch</text>
+			<path d="M 350,110 L 350,82 Z" style="stroke: rgb(19%,49%,56%); stroke-linecap: butt; stroke-width: 1.5;"/>
+			<path d="M 350,82 L 72,82 Z" style="stroke: rgb(19%,49%,56%); stroke-linecap: butt; stroke-width: 1.5;"/>
+			<path d="M 72,82 L 72,110 Z" style="stroke: rgb(19%,49%,56%); stroke-linecap: butt; stroke-width: 1.5;"/>
+			<polygon points="72 110, 69 104, 75 104" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(19%,49%,56%); fill-rule: evenodd;"/>
+			<text x="0" y="185" style="font-family: Times-Roman; font-size: 9px;fill: rgb(27%,33%,41%); stroke:none;" transform="translate(0,370) scale(1,-1)">El Verifier compara la respuesta real con el contrato.</text>
+		</g>
+	</g>
+</svg>

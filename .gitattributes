@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.png binary
+*.pdf binary
+# Los hashes de las evidencias dependen de conservar los bytes originales.
+*.log -text -whitespace
+pacts/*.json -text
+evidencias/resumen.json -text

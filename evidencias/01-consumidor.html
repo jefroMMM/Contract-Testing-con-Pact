@@ -1,0 +1,32 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><title>Consumidor: dos pruebas aprobadas</title>
+<style>*{box-sizing:border-box}body{margin:0;padding:30px;background:#f1f5f9;color:#14263d;font:18px Arial}h1{font-size:27px;margin:0 0 12px}p{margin:9px 0;line-height:1.4}code{font:15px Consolas,monospace;overflow-wrap:anywhere}.badge{display:inline-block;background:#d8f3e6;padding:8px 12px;border-radius:6px;font-weight:bold}.note{font-size:15px;color:#45566b}pre{background:white;border:1px solid #c9d3df;border-left:5px solid #327f91;padding:20px;font:18px/1.4 Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere;margin-bottom:8px}details pre{font-size:13px}footer{font-size:13px;line-height:1.5;overflow-wrap:anywhere}</style>
+<h1>Consumidor: dos pruebas aprobadas</h1>
+<p class="note">Captura del visor de registros originales de una ejecución real. No es una terminal nativa.</p>
+<p>29/10/2026, 19:38:32 · America/Guatemala · v22.23.2</p>
+<p class="badge">Código de salida real: 0 · esperado: 0</p>
+<p><code>node --import tsx --test --test-concurrency=1 tests/consumer.pact.test.ts</code></p>
+<pre id="stdout">TAP version 13
+# Subtest: producto existente: cliente real interpreta HTTP 200 y sus tipos
+ok 1 - producto existente: cliente real interpreta HTTP 200 y sus tipos
+  ---
+  duration_ms: 36.004
+  type: 'test'
+  ...
+# Subtest: producto inexistente: cliente real distingue HTTP 404 estructurado
+ok 2 - producto inexistente: cliente real distingue HTTP 404 estructurado
+  ---
+  duration_ms: 10.9736
+  type: 'test'
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 2
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1324.8281
+</pre>
+<footer>Fuente íntegra: 01-consumidor.stdout.log · Solo se eliminan códigos ANSI de color al visualizar.<br>SHA-256 del contrato: fd660d969315959dd27d720427e6cfc3cf21f924edbb480720c92d7300a8fd4c<br>SHA-256 del registro combinado: e30d5cab9d72135468c270bbff21eb4635a2e0c51d9b24687fd9cdeca76300aa</footer>
+<details><summary>stderr original (expandir para revisar)</summary><pre></pre></details></html>

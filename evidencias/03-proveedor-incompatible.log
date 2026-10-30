@@ -1,0 +1,35 @@
+Proveedor real: http://127.0.0.1:57136; price=string (INCOMPATIBLE)
+
+Verifying a pact between [1mProductConsumer[0m and [1mProductProvider[0m
+
+  consultar el producto p-100 (0s loading, 45ms verification)
+     Given existe el producto p-100
+    returns a response which
+      has status code [1m200[0m ([32mOK[0m)
+      includes headers
+        "[1mContent-Type[0m" with value "[1mapplication/json; charset=utf-8[0m" ([32mOK[0m)
+      has a matching body ([31mFAILED[0m)
+
+  consultar el producto p-404 (0s loading, 9ms verification)
+     Given no existe el producto p-404
+    returns a response which
+      has status code [1m404[0m ([32mOK[0m)
+      includes headers
+        "[1mContent-Type[0m" with value "[1mapplication/json; charset=utf-8[0m" ([32mOK[0m)
+      has a matching body ([32mOK[0m)
+
+
+Failures:
+
+1) Verifying a pact between ProductConsumer and ProductProvider Given existe el producto p-100 - consultar el producto p-100
+    1.1) has a matching body
+           [1m$.price[0m -> Expected '249.9' (String) to be a decimal number
+
+There were 1 pact failures
+
+[19:38:36.659] ERROR (19928): pact-core@20.2.0: Verification unsuccessful
+
+(node:19928) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+VERIFICACION FALLIDA: Error: {"errors":[{"interaction":"Verifying a pact between ProductConsumer and ProductProvider Given existe el producto p-100 - consultar el producto p-100","mismatch":{"interactionId":"","mismatches":[{"actual":"\"249.9\"","expected":"249.9","mismatch":"Expected '249.9' (String) to be a decimal number","path":"$.price","type":"BodyMismatch"}],"type":"mismatches"}}],"interactionResults":[{"consumer":"ProductConsumer","description":"consultar el producto p-100","duration":"45ms","mismatch":{"interactionId":"","mismatches":[{"actual":"\"249.9\"","expected":"249.9","mismatch":"Expected '249.9' (String) to be a decimal number","path":"$.price","type":"BodyMismatch"}],"type":"mismatches"},"pending":false,"provider":"ProductProvider","providerStates":["existe el producto p-100"],"result":"Error"},{"consumer":"ProductConsumer","description":"consultar el producto p-404","duration":"9ms","pending":false,"provider":"ProductProvider","providerStates":["no existe el producto p-404"],"result":"OK"}],"notices":[],"output":["\nVerifying a pact between \u001b[1mProductConsumer\u001b[0m and \u001b[1mProductProvider\u001b[0m","","  consultar el producto p-100 (0s loading, 45ms verification)","     Given existe el producto p-100","    returns a response which","      has status code \u001b[1m200\u001b[0m (\u001b[32mOK\u001b[0m)","      includes headers","        \"\u001b[1mContent-Type\u001b[0m\" with value \"\u001b[1mapplication/json; charset=utf-8\u001b[0m\" (\u001b[32mOK\u001b[0m)","      has a matching body (\u001b[31mFAILED\u001b[0m)","","  consultar el producto p-404 (0s loading, 9ms verification)","     Given no existe el producto p-404","    returns a response which","      has status code \u001b[1m404\u001b[0m (\u001b[32mOK\u001b[0m)","      includes headers","        \"\u001b[1mContent-Type\u001b[0m\" with value \"\u001b[1mapplication/json; charset=utf-8\u001b[0m\" (\u001b[32mOK\u001b[0m)","      has a matching body (\u001b[32mOK\u001b[0m)","","\nFailures:\n","1) Verifying a pact between ProductConsumer and ProductProvider Given existe el producto p-100 - consultar el producto p-100","    1.1) has a matching body","           \u001b[1m$.price\u001b[0m -> Expected '249.9' (String) to be a decimal number","\nThere were 1 pact failures\n"],"pendingErrors":[],"result":false}
+    at <anonymous> (C:\Users\masje\OneDrive\Desktop\[S13] Contract Testing con Pact\node_modules\@pact-foundation\pact-core\src\verifier\nativeVerifier.ts:52:20)

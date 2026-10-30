@@ -1,0 +1,22 @@
+Proveedor real: http://127.0.0.1:57144; price=number (COMPATIBLE)
+
+Verifying a pact between [1mProductConsumer[0m and [1mProductProvider[0m
+
+  consultar el producto p-100 (0s loading, 42ms verification)
+     Given existe el producto p-100
+    returns a response which
+      has status code [1m200[0m ([32mOK[0m)
+      includes headers
+        "[1mContent-Type[0m" with value "[1mapplication/json; charset=utf-8[0m" ([32mOK[0m)
+      has a matching body ([32mOK[0m)
+
+  consultar el producto p-404 (0s loading, 8ms verification)
+     Given no existe el producto p-404
+    returns a response which
+      has status code [1m404[0m ([32mOK[0m)
+      includes headers
+        "[1mContent-Type[0m" with value "[1mapplication/json; charset=utf-8[0m" ([32mOK[0m)
+      has a matching body ([32mOK[0m)
+
+
+VERIFICACION EXITOSA: las dos interacciones cumplen el contrato.

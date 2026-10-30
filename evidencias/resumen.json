@@ -1,0 +1,46 @@
+{
+  "startedAt": "2026-10-30T01:38:32.557Z",
+  "node": "v22.23.2",
+  "steps": [
+    {
+      "name": "01-consumidor",
+      "command": "node --import tsx --test --test-concurrency=1 tests/consumer.pact.test.ts",
+      "startedAt": "2026-10-30T01:38:32.653Z",
+      "finishedAt": "2026-10-30T01:38:34.080Z",
+      "exitCode": 0,
+      "expectedExit": 0,
+      "contractSha256": "fd660d969315959dd27d720427e6cfc3cf21f924edbb480720c92d7300a8fd4c",
+      "logSha256": "e30d5cab9d72135468c270bbff21eb4635a2e0c51d9b24687fd9cdeca76300aa"
+    },
+    {
+      "name": "02-proveedor-compatible",
+      "command": "node --import tsx tests/verify-provider.ts",
+      "startedAt": "2026-10-30T01:38:34.092Z",
+      "finishedAt": "2026-10-30T01:38:35.374Z",
+      "exitCode": 0,
+      "expectedExit": 0,
+      "contractSha256": "fd660d969315959dd27d720427e6cfc3cf21f924edbb480720c92d7300a8fd4c",
+      "logSha256": "3f9542031b661aea1bcfff4688071664db26174fb2585ada6a088f28971f26d6"
+    },
+    {
+      "name": "03-proveedor-incompatible",
+      "command": "node --import tsx tests/verify-provider.ts --incompatible",
+      "startedAt": "2026-10-30T01:38:35.384Z",
+      "finishedAt": "2026-10-30T01:38:36.688Z",
+      "exitCode": 1,
+      "expectedExit": 1,
+      "contractSha256": "fd660d969315959dd27d720427e6cfc3cf21f924edbb480720c92d7300a8fd4c",
+      "logSha256": "0ebc6cb4edbd0eaf8cc4dc6d91c6a140b34f910790b43aa47b92ee9c630c69bc"
+    },
+    {
+      "name": "04-proveedor-restaurado",
+      "command": "node --import tsx tests/verify-provider.ts",
+      "startedAt": "2026-10-30T01:38:36.698Z",
+      "finishedAt": "2026-10-30T01:38:38.007Z",
+      "exitCode": 0,
+      "expectedExit": 0,
+      "contractSha256": "fd660d969315959dd27d720427e6cfc3cf21f924edbb480720c92d7300a8fd4c",
+      "logSha256": "dc657e3ae2088535f938a3540b467797a918fbce2ad9527f80db0cc67d57a357"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><title>Proveedor: incompatibilidad detectada</title>
+<style>*{box-sizing:border-box}body{margin:0;padding:30px;background:#f1f5f9;color:#14263d;font:18px Arial}h1{font-size:27px;margin:0 0 12px}p{margin:9px 0;line-height:1.4}code{font:15px Consolas,monospace;overflow-wrap:anywhere}.badge{display:inline-block;background:#fff0da;padding:8px 12px;border-radius:6px;font-weight:bold}.note{font-size:15px;color:#45566b}pre{background:white;border:1px solid #c9d3df;border-left:5px solid #327f91;padding:20px;font:18px/1.4 Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere;margin-bottom:8px}details pre{font-size:13px}footer{font-size:13px;line-height:1.5;overflow-wrap:anywhere}</style>
+<h1>Proveedor: incompatibilidad detectada</h1>
+<p class="note">Captura del visor de registros originales de una ejecución real. No es una terminal nativa.</p>
+<p>29/10/2026, 19:38:35 · America/Guatemala · v22.23.2</p>
+<p class="badge">Código de salida real: 1 · esperado: 1</p>
+<p><code>node --import tsx tests/verify-provider.ts --incompatible</code></p>
+<pre id="stdout">Proveedor real: http://127.0.0.1:57136; price=string (INCOMPATIBLE)
+
+Verifying a pact between ProductConsumer and ProductProvider
+
+  consultar el producto p-100 (0s loading, 45ms verification)
+     Given existe el producto p-100
+    returns a response which
+      has status code 200 (OK)
+      includes headers
+        &quot;Content-Type&quot; with value &quot;application/json; charset=utf-8&quot; (OK)
+      has a matching body (FAILED)
+
+  consultar el producto p-404 (0s loading, 9ms verification)
+     Given no existe el producto p-404
+    returns a response which
+      has status code 404 (OK)
+      includes headers
+        &quot;Content-Type&quot; with value &quot;application/json; charset=utf-8&quot; (OK)
+      has a matching body (OK)
+
+
+Failures:
+
+1) Verifying a pact between ProductConsumer and ProductProvider Given existe el producto p-100 - consultar el producto p-100
+    1.1) has a matching body
+           $.price -&gt; Expected '249.9' (String) to be a decimal number
+
+There were 1 pact failures
+
+[19:38:36.659] ERROR (19928): pact-core@20.2.0: Verification unsuccessful
+
+</pre>
+<footer>Fuente íntegra: 03-proveedor-incompatible.stdout.log · Solo se eliminan códigos ANSI de color al visualizar.<br>SHA-256 del contrato: fd660d969315959dd27d720427e6cfc3cf21f924edbb480720c92d7300a8fd4c<br>SHA-256 del registro combinado: 0ebc6cb4edbd0eaf8cc4dc6d91c6a140b34f910790b43aa47b92ee9c630c69bc</footer>
+<details><summary>stderr original (expandir para revisar)</summary><pre>(node:19928) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+VERIFICACION FALLIDA: Error: {&quot;errors&quot;:[{&quot;interaction&quot;:&quot;Verifying a pact between ProductConsumer and ProductProvider Given existe el producto p-100 - consultar el producto p-100&quot;,&quot;mismatch&quot;:{&quot;interactionId&quot;:&quot;&quot;,&quot;mismatches&quot;:[{&quot;actual&quot;:&quot;\&quot;249.9\&quot;&quot;,&quot;expected&quot;:&quot;249.9&quot;,&quot;mismatch&quot;:&quot;Expected '249.9' (String) to be a decimal number&quot;,&quot;path&quot;:&quot;$.price&quot;,&quot;type&quot;:&quot;BodyMismatch&quot;}],&quot;type&quot;:&quot;mismatches&quot;}}],&quot;interactionResults&quot;:[{&quot;consumer&quot;:&quot;ProductConsumer&quot;,&quot;description&quot;:&quot;consultar el producto p-100&quot;,&quot;duration&quot;:&quot;45ms&quot;,&quot;mismatch&quot;:{&quot;interactionId&quot;:&quot;&quot;,&quot;mismatches&quot;:[{&quot;actual&quot;:&quot;\&quot;249.9\&quot;&quot;,&quot;expected&quot;:&quot;249.9&quot;,&quot;mismatch&quot;:&quot;Expected '249.9' (String) to be a decimal number&quot;,&quot;path&quot;:&quot;$.price&quot;,&quot;type&quot;:&quot;BodyMismatch&quot;}],&quot;type&quot;:&quot;mismatches&quot;},&quot;pending&quot;:false,&quot;provider&quot;:&quot;ProductProvider&quot;,&quot;providerStates&quot;:[&quot;existe el producto p-100&quot;],&quot;result&quot;:&quot;Error&quot;},{&quot;consumer&quot;:&quot;ProductConsumer&quot;,&quot;description&quot;:&quot;consultar el producto p-404&quot;,&quot;duration&quot;:&quot;9ms&quot;,&quot;pending&quot;:false,&quot;provider&quot;:&quot;ProductProvider&quot;,&quot;providerStates&quot;:[&quot;no existe el producto p-404&quot;],&quot;result&quot;:&quot;OK&quot;}],&quot;notices&quot;:[],&quot;output&quot;:[&quot;\nVerifying a pact between \u001b[1mProductConsumer\u001b[0m and \u001b[1mProductProvider\u001b[0m&quot;,&quot;&quot;,&quot;  consultar el producto p-100 (0s loading, 45ms verification)&quot;,&quot;     Given existe el producto p-100&quot;,&quot;    returns a response which&quot;,&quot;      has status code \u001b[1m200\u001b[0m (\u001b[32mOK\u001b[0m)&quot;,&quot;      includes headers&quot;,&quot;        \&quot;\u001b[1mContent-Type\u001b[0m\&quot; with value \&quot;\u001b[1mapplication/json; charset=utf-8\u001b[0m\&quot; (\u001b[32mOK\u001b[0m)&quot;,&quot;      has a matching body (\u001b[31mFAILED\u001b[0m)&quot;,&quot;&quot;,&quot;  consultar el producto p-404 (0s loading, 9ms verification)&quot;,&quot;     Given no existe el producto p-404&quot;,&quot;    returns a response which&quot;,&quot;      has status code \u001b[1m404\u001b[0m (\u001b[32mOK\u001b[0m)&quot;,&quot;      includes headers&quot;,&quot;        \&quot;\u001b[1mContent-Type\u001b[0m\&quot; with value \&quot;\u001b[1mapplication/json; charset=utf-8\u001b[0m\&quot; (\u001b[32mOK\u001b[0m)&quot;,&quot;      has a matching body (\u001b[32mOK\u001b[0m)&quot;,&quot;&quot;,&quot;\nFailures:\n&quot;,&quot;1) Verifying a pact between ProductConsumer and ProductProvider Given existe el producto p-100 - consultar el producto p-100&quot;,&quot;    1.1) has a matching body&quot;,&quot;           \u001b[1m$.price\u001b[0m -&gt; Expected '249.9' (String) to be a decimal number&quot;,&quot;\nThere were 1 pact failures\n&quot;],&quot;pendingErrors&quot;:[],&quot;result&quot;:false}
+    at &lt;anonymous&gt; (C:\Users\masje\OneDrive\Desktop\[S13] Contract Testing con Pact\node_modules\@pact-foundation\pact-core\src\verifier\nativeVerifier.ts:52:20)
+</pre></details></html>

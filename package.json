@@ -1,0 +1,31 @@
+{
+  "name": "contract-testing-con-pact",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Compatibilidad consumidor-proveedor de productos con Pact JS",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "start": "tsx src/server.ts",
+    "consumer": "tsx src/consumer-cli.ts",
+    "test:unit": "node --import tsx --test tests/client.test.ts tests/provider.test.ts",
+    "test:consumer": "node scripts/clean-contract.mjs && node --import tsx --test --test-concurrency=1 tests/consumer.pact.test.ts",
+    "test:provider": "tsx tests/verify-provider.ts",
+    "test:provider:incompatible": "tsx tests/verify-provider.ts --incompatible",
+    "demo": "node scripts/demo.mjs",
+    "test": "npm run typecheck && npm run test:unit && npm run test:consumer && npm run test:provider && npm run test:smoke",
+    "evidence:capture": "node scripts/capture-evidence.mjs",
+    "report": "python scripts/build-report.py",
+    "test:smoke": "node scripts/smoke-app.mjs"
+  },
+  "devDependencies": {
+    "@pact-foundation/pact": "17.1.4",
+    "@types/node": "22.19.11",
+    "playwright": "1.64.1",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3"
+  }
+}
