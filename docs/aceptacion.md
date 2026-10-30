@@ -18,7 +18,7 @@ Versión: `entrega-v1.0.0`. Fecha: 29 de octubre de 2026, America/Guatemala.
 - [x] Registros stdout/stderr y metadatos de ejecución preservados.
 - [x] README reproducible, diagramas Mermaid/SVG y fuente editable del informe.
 - [x] Informe PDF de nueve páginas, renderizado y revisado visualmente.
-- [x] Guion opcional de exposición de tres minutos; no se requiere video.
+- [x] Informe académico en PDF, listo para cargar en Canvas.
 - [x] Instalación limpia con `npm ci` y auditoría npm sin vulnerabilidades reportadas.
 - [x] Revisión de archivos entregables sin credenciales ni claves privadas detectadas.
 

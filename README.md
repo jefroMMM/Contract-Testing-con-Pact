@@ -218,14 +218,13 @@ Conserva juntos logs, resumen e imágenes de una misma ejecución para no mezcla
 
 Los archivos `05-pruebas-finales.log` y `06-demostracion-completa.log` conservan también la validación final y la demostración completa. `.gitattributes` preserva los bytes de contratos y registros para que Git no altere sus hashes al cambiar de sistema operativo. Pact puede emitir el aviso de dependencia `DEP0060`; los códigos de salida y los resultados contractuales determinan si la ejecución pasó.
 
-## Informe, diagrama y exposición
+## Informe y diagrama
 
 - Informe académico: [PDF](output/pdf/informe-contract-testing.pdf).
 - Fuente editable del informe: [Markdown](docs/informe.md).
 - Arquitectura: diagrama Mermaid de este README y diagrama del informe.
-- Guion opcional de exposición: [3 minutos](docs/guion-exposicion.md).
 
-El PDF se genera directamente con herramientas de documentación y queda listo para cargarlo en **Canvas**, la plataforma educativa de la universidad. La carga en Canvas corresponde al responsable de la entrega; no se afirma que el documento haya sido creado o entregado dentro de esa plataforma. No se requiere video.
+El PDF se genera directamente con herramientas de documentación y queda listo para cargarlo en **Canvas**, la plataforma educativa de la universidad. La carga en Canvas corresponde al responsable de la entrega; no se afirma que el documento haya sido creado o entregado dentro de esa plataforma.
 
 Para regenerar el informe localmente, utiliza Python 3.10 o superior (3.13.14 usado en la entrega):
 

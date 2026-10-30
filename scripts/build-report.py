@@ -212,7 +212,7 @@ sub('Trazabilidad de la evidencia', 'resumen.json conserva fechas UTC, comandos,
 p('SHA-256 del contrato: ' + contract_hash[:32] + '<br/>' + contract_hash[32:], 'CodeCustom')
 md.append('SHA-256 del contrato: `' + contract_hash + '`.\n')
 sub('Conclusiones', 'La verificación mostró que el consumidor y el proveedor son compatibles en los dos escenarios definidos. El fallo controlado demostró que conservar HTTP 200 no es suficiente: cambiar el tipo de un campo requerido rompe el acuerdo. Los estados independientes permitieron repetir las pruebas y recuperar el resultado correcto sin editar el contrato. Pact complementa las pruebas de comportamiento, pero este alcance no incluye carga, seguridad ni otros casos de negocio.')
-para('La entrega incluye código, contrato generado, cuatro capturas, registros originales, README reproducible y guion opcional de tres minutos. El informe está listo para cargar manualmente en Canvas; no se requiere video.')
+para('La entrega incluye código, contrato generado, cuatro capturas, registros originales y README reproducible. El informe está listo para cargar manualmente en Canvas.')
 p(f'Repositorio: <link href="{repo}" color="#267387">jefroMMM/Contract-Testing-con-Pact</link><br/>Versión final: <link href="{tag_url}" color="#267387">entrega-v1.0.0</link>', 'SmallCustom')
 md.append(f'Repositorio: {repo}\n\nEtiqueta final: {tag_url}\n')
 refs = [

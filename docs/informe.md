@@ -103,7 +103,7 @@ SHA-256 del contrato: `fd660d969315959dd27d720427e6cfc3cf21f924edbb480720c92d730
 
 La verificación mostró que el consumidor y el proveedor son compatibles en los dos escenarios definidos. El fallo controlado demostró que conservar HTTP 200 no es suficiente: cambiar el tipo de un campo requerido rompe el acuerdo. Los estados independientes permitieron repetir las pruebas y recuperar el resultado correcto sin editar el contrato. Pact complementa las pruebas de comportamiento, pero este alcance no incluye carga, seguridad ni otros casos de negocio.
 
-La entrega incluye código, contrato generado, cuatro capturas, registros originales, README reproducible y guion opcional de tres minutos. El informe está listo para cargar manualmente en Canvas; no se requiere video.
+La entrega incluye código, contrato generado, cuatro capturas, registros originales y README reproducible. El informe está listo para cargar manualmente en Canvas.
 
 Repositorio: https://github.com/jefroMMM/Contract-Testing-con-Pact
 
